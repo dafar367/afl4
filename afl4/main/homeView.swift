@@ -10,10 +10,10 @@ import SwiftUI
 struct homeView: View {
     var body: some View {
         NavigationView {
-            List(Destination.all) { destination in
-                Text(destination.name)
-                    .navigationTitle("recomend place")
+            ScrollView{
+                placeList(destination: Destination.all)
             }
+            .navigationTitle("Recomend place")
         }
         .navigationViewStyle(.stack)
     }
@@ -22,5 +22,6 @@ struct homeView: View {
 struct homeView_Previews: PreviewProvider {
     static var previews: some View {
         homeView()
+        
     }
 }

@@ -10,7 +10,18 @@ import SwiftUI
 struct categorieView: View {
     var body: some View {
         NavigationView {
-            Text("category")
+            List{
+                ForEach(Category.allCases){ category in
+                    NavigationLink{
+                        ScrollView{
+                            placeList(destination: Destination.all.filter{ $0.category == category.rawValue})
+                        }
+                    }label: {
+                        Text(category.rawValue + "s")
+                    }
+                    
+                }
+            }
                 .navigationTitle("category")
         }
         .navigationViewStyle(.stack)

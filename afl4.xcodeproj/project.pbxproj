@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E87942E284C8B2D00DF67A5 /* placeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E87942D284C8B2D00DF67A5 /* placeList.swift */; };
+		2E879430284C901C00DF67A5 /* placeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E87942F284C901C00DF67A5 /* placeDetail.swift */; };
 		2EB4FE0E284C6D2900553397 /* afl4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB4FE0D284C6D2900553397 /* afl4App.swift */; };
 		2EB4FE10284C6D2900553397 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB4FE0F284C6D2900553397 /* ContentView.swift */; };
 		2EB4FE12284C6D2C00553397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EB4FE11284C6D2C00553397 /* Assets.xcassets */; };
@@ -21,6 +23,7 @@
 		2EB4FE46284C6E5F00553397 /* favoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB4FE45284C6E5F00553397 /* favoriteView.swift */; };
 		2EB4FE48284C73BB00553397 /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB4FE47284C73BB00553397 /* tabBar.swift */; };
 		2EB4FE4A284C797000553397 /* placeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB4FE49284C797000553397 /* placeModels.swift */; };
+		2EB4FE4C284C7B1E00553397 /* placeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB4FE4B284C7B1E00553397 /* placeCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E87942D284C8B2D00DF67A5 /* placeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeList.swift; sourceTree = "<group>"; };
+		2E87942F284C901C00DF67A5 /* placeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeDetail.swift; sourceTree = "<group>"; };
 		2EB4FE0A284C6D2900553397 /* afl4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = afl4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EB4FE0D284C6D2900553397 /* afl4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = afl4App.swift; sourceTree = "<group>"; };
 		2EB4FE0F284C6D2900553397 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +63,7 @@
 		2EB4FE45284C6E5F00553397 /* favoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteView.swift; sourceTree = "<group>"; };
 		2EB4FE47284C73BB00553397 /* tabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBar.swift; sourceTree = "<group>"; };
 		2EB4FE49284C797000553397 /* placeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeModels.swift; sourceTree = "<group>"; };
+		2EB4FE4B284C7B1E00553397 /* placeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +191,7 @@
 		2EB4FE3B284C6DD300553397 /* detail */ = {
 			isa = PBXGroup;
 			children = (
+				2E87942F284C901C00DF67A5 /* placeDetail.swift */,
 			);
 			name = detail;
 			sourceTree = "<group>";
@@ -192,6 +199,8 @@
 		2EB4FE3C284C6DDA00553397 /* component */ = {
 			isa = PBXGroup;
 			children = (
+				2EB4FE4B284C7B1E00553397 /* placeCard.swift */,
+				2E87942D284C8B2D00DF67A5 /* placeList.swift */,
 			);
 			name = component;
 			sourceTree = "<group>";
@@ -326,11 +335,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E87942E284C8B2D00DF67A5 /* placeList.swift in Sources */,
 				2EB4FE40284C6E2900553397 /* categorieView.swift in Sources */,
 				2EB4FE44284C6E4F00553397 /* settingView.swift in Sources */,
 				2EB4FE4A284C797000553397 /* placeModels.swift in Sources */,
+				2E879430284C901C00DF67A5 /* placeDetail.swift in Sources */,
 				2EB4FE10284C6D2900553397 /* ContentView.swift in Sources */,
 				2EB4FE48284C73BB00553397 /* tabBar.swift in Sources */,
+				2EB4FE4C284C7B1E00553397 /* placeCard.swift in Sources */,
 				2EB4FE42284C6E4200553397 /* newPlaceView.swift in Sources */,
 				2EB4FE46284C6E5F00553397 /* favoriteView.swift in Sources */,
 				2EB4FE0E284C6D2900553397 /* afl4App.swift in Sources */,

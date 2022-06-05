@@ -23,6 +23,7 @@ struct Destination: Identifiable{
     let description: String
     let address: String
     let telp: String
+    let star: String
     let category: Category.RawValue
     
 }
@@ -35,6 +36,7 @@ extension Destination{
             description: "Staff Bon Ami Bakery berkomitmen untuk memberikan pelayanan terbaik dan menyambut semua Sahabat Bon Ami bagaikan di rumah sendiri. Suguhan olahan Bon Ami Bakery menggunakan resep keluarga dengan sentuhan modern, dibuat secara higienis dengan standard tinggi dan menggunakan bahan-bahan berkualitas. Suguhan Bon Ami Bakery mengingatkan akan momen-momen hangat bersama yang terkasih.",
             address: "Dr. Soetomo 94 Surabaya, Jawa Timur",
             telp:"(031) 562 3800",
+            star:"⭐️⭐️⭐️⭐️",
             category: "Restaurant"
         ),
         Destination(
@@ -43,6 +45,7 @@ extension Destination{
             description: "Welcome to Ikan Bakar Cianjur. Here at IBC we believe that we're more than a restaurant, we're preservers of Indonesia' Culinary Heritage. As a restaurant, we strive to source locally as much as we can. We have our own greenhouse at our Pandaan outlet, where we grow some of our own hydroponic vegetables -which after each harvest we distribute them to our outlets. We pride in using fresh local ingredients, put together into delicious, healthy, family friendly meals suitable for lunch or dinner",
             address: "Jl. Indragiri No.23, Darmo, Kec. Wonokromo, Kota SBY, Jawa Timur 60241",
             telp:" (081) 13866509 ",
+            star: "⭐️⭐️⭐️",
             category: "Restaurant"
         ),
         Destination(
@@ -51,6 +54,7 @@ extension Destination{
             description: "Zangrandi adalah kedai es krim yang menjadi salah satu ikon kuliner legendaris Surabaya. Kedai es krim ini berdiri sejak 1930an dan beralamat di pusat Kota Surabaya tepatnya di Jalan Yos Sudarso Nomor 15. Pengelola es krim Zangrandi Felix Tanumulia ditemui Kompas.com pada 2014 menceritakan sejarah Zangrandi di Surabaya. Ia bercerita banyak orang salah kaprah mengira Zangrandi adalah es krim belanda lantaran berdiri sejak zaman kolonial Belanda.",
             address: "Jl. Yos Sudarso No.15, Embong Kaliasin, Kec. Genteng, Kota SBY, Jawa Timur 60271",
             telp:"(031) 5345820",
+            star: "⭐️⭐️⭐️⭐️",
             category: "Restaurant"
         ),
         Destination(
@@ -59,6 +63,7 @@ extension Destination{
             description: "Bangunan museum merupakan rumah milik kakak pertama WR. Soepratman, yang bernama Roekiyem Soepratijah. WR. Soepratman tinggal di rumah tersebut pada tahun 1937, hingga akhirnya meninggal dunia pada 17 Agustus 1938. Jl. Mangga No.21, Gedang Sewu, Surabaya Kel. Tambaksari / Kec. Tambaksari. Falisitas yang tersedia di destinasi wisata ini adalah toilet dan AC",
             address: "Jl. Mangga No.21, Tambaksari, Kec. Tambaksari, Kota SBY, Jawa Timur 60136",
             telp:"(031) 5013518",
+            star: "⭐️⭐️⭐️",
             category: "Museum"
         ),
         Destination(
@@ -67,6 +72,7 @@ extension Destination{
             description: "Museum Pendidikan Surabaya merupakan museum tematik yang didirikan sebagai langkah pelestarian sejarah dan budaya bangsa dengan tujuan untuk mendukung kegiatan edukasi, riset dan rekreasi di Kota Surabaya. Diresmikan oleh Walikota Surabaya Tri Rismaharini pada 25 November 2019.",
             address: "Jl. Genteng Kali No.10, Genteng, Kec. Genteng, Kota SBY, Jawa Timur 60275",
             telp:"(031) 1234567",
+            star: "⭐️⭐️",
             category: "Museum"
         ),
         Destination(
@@ -75,6 +81,7 @@ extension Destination{
             description: "Museum ini memiliki tiga lantai dan menampilkan sejarah sistem perbankan di Indonesia, foto-foto lama dari Surabaya dan juga koleksi mata uang kuno. Tampilan museum dibagi menjadi tiga ruang yaitu Ruangan Koleksi Mata Uang Lama, Ruangan Koleksi dari Konservasi, dan Ruangan Koleksi Harta Budaya",
             address: "Jl. Garuda No.1, Krembangan Sel., Kec. Krembangan, Kota SBY, Jawa Timur 60175",
             telp:"(031) 3531829",
+            star: "⭐️⭐️⭐️",
             category: "Museum"
         ),
         Destination(
@@ -83,6 +90,7 @@ extension Destination{
             description: "Pakuwon Mall (sebelumnya bernama Supermal Pakuwon Indah) adalah pusat perbelanjaan terbesar di Indonesia dengan luas NLA sebesar 200.000 m2. Pusat perbelanjaan ini berdampingan dan menyatu dengan Pakuwon Trade Center (atau biasa disingkat PTC). Pusat perbelanjaan ini terletak di Jalan Puncak Indah Lontar no 2, Kompleks Perumahan Pakuwon Indah, Lontar, Sambikerep, Kota Surabaya dan merupakan bagian dari Pakuwon Indah Superblock dengan total luas 30 hektar, tepat di pusat CBD Surabaya Barat",
             address: "Jl. Mayjend. Jonosewojo No.2, Babatan, Kec. Wiyung, Kota SBY, Jawa Timur 60227",
             telp:"(031) 7393 888",
+            star: "⭐️⭐️⭐️⭐️⭐️",
             category: "Shopping"
         ),
         Destination(
@@ -91,6 +99,7 @@ extension Destination{
             description: "Pusat Perbelanjaan Pasar Atom berdiri sejak tahun 1972 dan merupakan salah satu pusat perbelanjaan terbesar di Indonesia Timur pada umumnya dan di Surabaya pada khususnya. Pasar Atom merupakan Pusat Perbelanjaan yang sudah terkenal sejak lama akan keramaian dan kepadatan pengunjung serta tingginya perputaran omzet para pedagangnya.",
             address: "Jl. Bunguran No.45, Bongkaran, Kec. Pabean Cantikan, Kota SBY, Jawa Timur 60161",
             telp:"(031) 3551995",
+            star: "⭐️⭐️⭐️",
             category: "Shopping"
         ),
         Destination(
@@ -99,6 +108,7 @@ extension Destination{
             description: "Tunjungan Plaza adalah sebuah pusat perbelanjaan terbesar kedua setelah Pakuwon Mall beserta PTC di Surabaya, sekaligus plaza yang paling populer di masyarakat kota Surabaya, yang didirikan pada tahun 1986, dan terakhir dibuka Tunjungan Plaza VI pada tahun 2017",
             address: "Jl. Jenderal Basuki Rachmat No.8-12, Kedungdoro, Kec. Tegalsari, Kota SBY, Jawa Timur 60261",
             telp:"(031) 5311088",
+            star: "⭐️⭐️⭐️⭐️⭐️",
             category: "Shopping"
         ),
         Destination(
@@ -107,6 +117,7 @@ extension Destination{
             description: "Museum Sepuluh November Surabaya adalah salah satu museum yang terletak di Kota Surabaya, dibangun pada tahun 1945. Museum ini dibangun dengan tujuan untuk mempelajari dan memperdalam peristiwa Pertempuran Sepuluh November 1945, Museum Sepuluh November beralamat di Jalan Pahlawan, Surabaya.",
             address: "Pahlawan St, Alun-alun Contong, Bubutan, Surabaya City, East Java 60174",
             telp:"(031) 3571100",
+            star: "⭐️⭐️⭐️",
             category: "Monument"
         ),
         Destination(
@@ -115,6 +126,7 @@ extension Destination{
             description: "Monumen Kapal Selam, atau disingkat Monkasel, adalah sebuah museum kapal selam yang terdapat di Embong Kaliasin, Genteng, Surabaya. Terletak di pusat kota, monumen ini sebenarnya merupakan kapal selam KRI Pasopati 410, salah satu armada Angkatan Laut Republik Indonesia buatan Uni Soviet tahun 1952.",
             address: "Jl. Pemuda No.39, Embong Kaliasin, Kec. Genteng, Kota SBY, Jawa Timur 60271",
             telp:"(031) 5490410",
+            star: "⭐️⭐️⭐️",
             category: "Monument"
         ),
         Destination(
@@ -123,6 +135,7 @@ extension Destination{
             description: "Situated in the province of East Java, the Monumen Gubernur Suryo is located around a small park. The statue was constructed in honour of the first governor, and a national hero, of East Java, Governor Soerjo. It is quite stunning at night when illuminated. You will come across the statue many times while on touring the city as it is located in the city centre.",
             address: "Jl. Gubernur Suryo, Embong Kaliasin, Kec. Genteng, Kota SBY, Jawa Timur 60271",
             telp:"(031) 0987654",
+            star: "⭐️⭐️",
             category: "Monument"
         )
     ]
