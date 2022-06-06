@@ -6,10 +6,23 @@
 //
 
 import SwiftUI
+import CoreLocation
+
 
 struct placeDetail: View {
     var destination:Destination
     
+    var locationCoordinate: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(
+            latitude: destination.lattitude,
+            longitude: destination.longtitude
+        )
+    }
+
+    struct Coordinates: Hashable, Codable {
+        var latitude: Double
+        var longitude: Double
+    }
     
     var body: some View {
         ScrollView{
@@ -49,6 +62,7 @@ struct placeDetail: View {
                     
                     VStack(alignment: .leading){
                         Text(destination.description)
+                            .lineLimit(3)
                             Spacer()
                         
                     }
@@ -61,6 +75,7 @@ struct placeDetail: View {
                             .padding(.horizontal,10)
                             .foregroundColor(Color("blueFont"))
                             .frame(width:85)
+                            
                         Text(destination.address)
                             
                             
@@ -90,7 +105,11 @@ struct placeDetail: View {
                     }
                 }
                 Spacer()
-                
+                VStack{
+                    mapsView(coordinate:locationCoordinate)
+                        .frame(height:200)
+                        .cornerRadius(30)
+                }
                 
             }
             .padding(.horizontal,20)

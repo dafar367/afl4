@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E46E5CF284D944800D2BE0F /* mapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E46E5CE284D944800D2BE0F /* mapsView.swift */; };
 		2E87942E284C8B2D00DF67A5 /* placeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E87942D284C8B2D00DF67A5 /* placeList.swift */; };
 		2E879430284C901C00DF67A5 /* placeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E87942F284C901C00DF67A5 /* placeDetail.swift */; };
 		2EB4FE0E284C6D2900553397 /* afl4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB4FE0D284C6D2900553397 /* afl4App.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E46E5CE284D944800D2BE0F /* mapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapsView.swift; sourceTree = "<group>"; };
 		2E87942D284C8B2D00DF67A5 /* placeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeList.swift; sourceTree = "<group>"; };
 		2E87942F284C901C00DF67A5 /* placeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeDetail.swift; sourceTree = "<group>"; };
 		2EB4FE0A284C6D2900553397 /* afl4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = afl4.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +203,7 @@
 			children = (
 				2EB4FE4B284C7B1E00553397 /* placeCard.swift */,
 				2E87942D284C8B2D00DF67A5 /* placeList.swift */,
+				2E46E5CE284D944800D2BE0F /* mapsView.swift */,
 			);
 			name = component;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				2EB4FE40284C6E2900553397 /* categorieView.swift in Sources */,
 				2EB4FE44284C6E4F00553397 /* settingView.swift in Sources */,
 				2EB4FE4A284C797000553397 /* placeModels.swift in Sources */,
+				2E46E5CF284D944800D2BE0F /* mapsView.swift in Sources */,
 				2E879430284C901C00DF67A5 /* placeDetail.swift in Sources */,
 				2EB4FE10284C6D2900553397 /* ContentView.swift in Sources */,
 				2EB4FE48284C73BB00553397 /* tabBar.swift in Sources */,

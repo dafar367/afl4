@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 enum Category: String, CaseIterable, Identifiable {
     var id: String{ self.rawValue }
@@ -25,8 +26,12 @@ struct Destination: Identifiable{
     let telp: String
     let star: String
     let category: Category.RawValue
+    var lattitude: CLLocationDegrees
+    var longtitude: CLLocationDegrees
+    
     
 }
+
 
 extension Destination{
     static let all: [Destination] = [
@@ -37,7 +42,10 @@ extension Destination{
             address: "Dr. Soetomo 94 Surabaya, Jawa Timur",
             telp:"(031) 562 3800",
             star:"⭐️⭐️⭐️⭐️",
-            category: "Restaurant"
+            category: "Restaurant",
+            lattitude:  -7.283210570146246,
+            longtitude: 112.73519800720248
+            
         ),
         Destination(
             name: "Ikan Bakar Cianjur (IBC)",
@@ -46,7 +54,10 @@ extension Destination{
             address: "Jl. Indragiri No.23, Darmo, Kec. Wonokromo, Kota SBY, Jawa Timur 60241",
             telp:" (081) 13866509 ",
             star: "⭐️⭐️⭐️",
-            category: "Restaurant"
+            category: "Restaurant",
+            lattitude: 51.4816,
+            longtitude: -0.191034
+
         ),
         Destination(
             name: "Zangrandi",
@@ -55,7 +66,9 @@ extension Destination{
             address: "Jl. Yos Sudarso No.15, Embong Kaliasin, Kec. Genteng, Kota SBY, Jawa Timur 60271",
             telp:"(031) 5345820",
             star: "⭐️⭐️⭐️⭐️",
-            category: "Restaurant"
+            category: "Restaurant",
+            lattitude: -7.263405917927377,
+            longtitude: 112.74611674781364
         ),
         Destination(
             name: "Museum WR Soepratman",
@@ -64,7 +77,10 @@ extension Destination{
             address: "Jl. Mangga No.21, Tambaksari, Kec. Tambaksari, Kota SBY, Jawa Timur 60136",
             telp:"(031) 5013518",
             star: "⭐️⭐️⭐️",
-            category: "Museum"
+            category: "Museum",
+            lattitude: 51.4816,
+            longtitude: -0.191034
+
         ),
         Destination(
             name: "Museum Pendidikan Surabaya",
@@ -73,7 +89,10 @@ extension Destination{
             address: "Jl. Genteng Kali No.10, Genteng, Kec. Genteng, Kota SBY, Jawa Timur 60275",
             telp:"(031) 1234567",
             star: "⭐️⭐️",
-            category: "Museum"
+            category: "Museum",
+            lattitude: 51.4816,
+            longtitude: -0.191034
+
         ),
         Destination(
             name: "Museum De Javasche Bank",
@@ -82,7 +101,10 @@ extension Destination{
             address: "Jl. Garuda No.1, Krembangan Sel., Kec. Krembangan, Kota SBY, Jawa Timur 60175",
             telp:"(031) 3531829",
             star: "⭐️⭐️⭐️",
-            category: "Museum"
+            category: "Museum",
+            lattitude: 51.4816,
+            longtitude: -0.191034
+
         ),
         Destination(
             name: "Pakuwon Mall",
@@ -91,7 +113,10 @@ extension Destination{
             address: "Jl. Mayjend. Jonosewojo No.2, Babatan, Kec. Wiyung, Kota SBY, Jawa Timur 60227",
             telp:"(031) 7393 888",
             star: "⭐️⭐️⭐️⭐️⭐️",
-            category: "Shopping"
+            category: "Shopping",
+            lattitude: 51.4816,
+            longtitude: -0.191034
+
         ),
         Destination(
             name: "Pasar Atom",
@@ -100,7 +125,10 @@ extension Destination{
             address: "Jl. Bunguran No.45, Bongkaran, Kec. Pabean Cantikan, Kota SBY, Jawa Timur 60161",
             telp:"(031) 3551995",
             star: "⭐️⭐️⭐️",
-            category: "Shopping"
+            category: "Shopping",
+            lattitude: 51.4816,
+            longtitude: -0.191034
+
         ),
         Destination(
             name: "Tunjungan Plaza",
@@ -109,7 +137,10 @@ extension Destination{
             address: "Jl. Jenderal Basuki Rachmat No.8-12, Kedungdoro, Kec. Tegalsari, Kota SBY, Jawa Timur 60261",
             telp:"(031) 5311088",
             star: "⭐️⭐️⭐️⭐️⭐️",
-            category: "Shopping"
+            category: "Shopping",
+            lattitude: 51.4816,
+            longtitude: -0.191034
+
         ),
         Destination(
             name: "Monumen Tugu Pahlawan dan Sepuluh Nopember",
@@ -118,7 +149,10 @@ extension Destination{
             address: "Pahlawan St, Alun-alun Contong, Bubutan, Surabaya City, East Java 60174",
             telp:"(031) 3571100",
             star: "⭐️⭐️⭐️",
-            category: "Monument"
+            category: "Monument",
+            lattitude: 51.4816,
+            longtitude: -0.191034
+
         ),
         Destination(
             name: "Monumen Kapal Selam",
@@ -127,7 +161,10 @@ extension Destination{
             address: "Jl. Pemuda No.39, Embong Kaliasin, Kec. Genteng, Kota SBY, Jawa Timur 60271",
             telp:"(031) 5490410",
             star: "⭐️⭐️⭐️",
-            category: "Monument"
+            category: "Monument",
+            lattitude: 51.4816,
+            longtitude: -0.191034
+
         ),
         Destination(
             name: "Monumen Gubernur Suryo",
@@ -136,7 +173,10 @@ extension Destination{
             address: "Jl. Gubernur Suryo, Embong Kaliasin, Kec. Genteng, Kota SBY, Jawa Timur 60271",
             telp:"(031) 0987654",
             star: "⭐️⭐️",
-            category: "Monument"
+            category: "Monument",
+            lattitude: 51.4816,
+            longtitude: -0.191034
+
         )
     ]
 }
