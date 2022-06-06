@@ -18,14 +18,7 @@ struct tabBar: View {
                 .tabItem {
                     Label("category", systemImage: "list.bullet")
                 }
-            newPlaceView()
-                .tabItem {
-                    Label("plus", systemImage: "plus")
-                }
-            settingView()
-                .tabItem {
-                    Label("setting", systemImage: "gear")
-                }
+            
             favoriteView()
                 .tabItem {
                     Label("favorite", systemImage: "heart")
