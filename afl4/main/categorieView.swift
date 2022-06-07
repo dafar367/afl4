@@ -9,6 +9,7 @@ import SwiftUI
 
 struct categorieView: View {
     var body: some View {
+        
         NavigationView {
             List{
                 ForEach(Category.allCases){ category in
@@ -24,6 +25,7 @@ struct categorieView: View {
             }
                 .navigationTitle("category")
         }
+        
         .navigationViewStyle(.stack)
     }
 }
